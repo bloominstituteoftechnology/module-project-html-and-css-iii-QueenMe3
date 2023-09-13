@@ -92,6 +92,99 @@
   <p>Work through the tasks until the boxes match the <a href="./design/part-1.png">DESIGN</a>.</p>
   <p>Making changes to the HTML is not allowed! The tasks must be completed using CSS alone.</p>
 
+  [id^=flexContainer] {
+    display: flex;
+  }
+
+  #flexContainer1 {
+    justify-content: space-evenly;
+  }
+
+  #flexContainer2 {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
+  }
+
+  #flexContainer3 {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end; 
+  }
+
+  #flexContainer4 {
+    justify-content: space-around;
+    align-items: flex-end
+  }
+
+  #flexContainer4.flexItem:nth-child(1){
+    order: 2 
+  }
+
+  #flexContainer4.flexItem:nth-child(2){
+    order: 3 
+  }
+
+  #flexContainer4.flexItem:nth-child(3){
+    order: 1 
+  }
+
+  #flexContainer5 {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #flexContainer5.flexItem:nth-child(2) {
+    align-self: center;
+  }
+
+  #flexContainer6 {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  #flexContainer6.flexItem:nth-child(1){
+    justify-content: flex-end;
+  }
+
+  #flexContainer6.flexItem:nth-child(2){
+    align-items: flex-end;
+  }
+
+  #flexContainer6.flexItem:nth-child(3){
+    align-self: flex-start;
+  }
+
+  #flexContainer7.flexItem:nth-child(1){
+    flex-grow: 0;
+  }
+
+  #flexContainer7.flexItem:nth-child(2){
+    flex-grow: 1;
+  }
+
+  #flexContainer7.flexItem:nth-child(3){
+    flex-grow: 2;
+  }
+
+  #flexContainer8 {
+    justify-content: space-between;
+  }
+
+  #flexContainer8.flexItem:nth-child(1){
+    justify-content: flex-end;
+  }
+
+  #flexContainer8.flexItem:nth-child(2){
+    align-self: center; 
+  }
+
+  #flexContainer8.flexItem:nth-child(3){
+    align-self: flex-end;
+    justify-content: flex-start;
+  }
+
   <div id="challenge">
     <div id="flexContainer1">
       <div class="flexItem">1</div>
